@@ -96,8 +96,8 @@ docker-compose up -d --build
 
 ## 🌐 Acessos
 
-* Sistema: http://localhost:8081
-* phpMyAdmin: http://localhost:8080
+* Sistema: http://localhost:8085
+* phpMyAdmin: http://localhost:8084
 
 ---
 
