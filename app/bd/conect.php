@@ -3,7 +3,7 @@ try {
     $host = getenv('DB_HOST') ?: 'mysql';
     $db = getenv('DB_NAME') ?: 'sistema_curso';
     $user = getenv('DB_USER') ?: 'user';
-    $pass = getenv('DB_PASS') ?: 'SenhaUser@123';
+    $pass = getenv('DB_PASS') ?: 'ainsenhazinha';
 
 
     $pdo = new PDO(

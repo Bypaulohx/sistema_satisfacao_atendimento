@@ -6,7 +6,7 @@ services:
     volumes:
       - ./app:/var/www/html
     ports:
-      - "8081:80"
+      - "8085:80"
     depends_on:
       - mysql
     networks:
@@ -29,7 +29,7 @@ services:
     environment:
       PMA_HOST: mysql
     ports:
-      - "127.0.0.1:8080:80"
+      - "127.0.0.1:8084:80"
     depends_on:
       - mysql
     networks:
@@ -40,4 +40,4 @@ volumes:
 
 networks:
   rede_geral:
-    external: true
+    driver: bridge
