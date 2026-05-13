@@ -1,29 +1,29 @@
-name: qualquernomepessoal
+name: CI Python - Aula
 
 on:
     push:
         branches:
             - main
             - master
-
+    
     pull_request:
-        branches:
+       branches:
             - main
-            - master
+            - master 
 
 jobs:
     test:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Clonar Repositório
+            - name: Clonar repositório
               uses: actions/checkout@v4
-
-            - name: Configurar python
+            
+            - name: Configurar Python
               uses: actions/setup-python@v5
               with:
                 python-version: "3.12"
-
+            
             - name: Instalar dependências
               run: |
                 python -m pip install --upgrade pip
@@ -31,4 +31,3 @@ jobs:
 
             - name: Executar testes
               run: pytest
-            
